@@ -36,7 +36,7 @@ public class Sber {
         driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/table/tbody/tr/td/div/div/div/div/div/div[1]/div[1]/div[4]/div/div/div/ul/li[5]/div/div/div[2]/div/a")).click();
         assertEquals("Страхование путешественников", driver.findElement(By.xpath("//*[@id=\"main\"]/div/div/div/div/div/div/div/div[2]/div[2]/div/div/div/div[1]/div/div/div/div")).getText());
         driver.findElement(By.xpath("//img[@src='/portalserver/content/atom/contentRepository/content/person/travel/banner-zashita-traveler.jpg?id=f6c836e1-5c5c-4367-b0d0-bbfb96be9c53']")).click();
-        driver.findElement(By.xpath("//div[@class='b-form-box-title ng-binding'][contains(text(),'Минимальная')]")).click();
+        driver.findElement(By.xpath("/html/body/div[1]/div/form/section/section/section[2]/div[1]/div[1]/div")).click();
         driver.findElement(By.xpath("//span[@ng-click='save()']")).click();
         fillField(By.name("insured0_surname"),"Петров");
         fillField(By.name("insured0_name"),"Иван");
